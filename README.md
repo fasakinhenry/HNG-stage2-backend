@@ -88,8 +88,6 @@ GET /api/profiles?gender=male&country_id=NG&min_age=25&sort_by=age&order=desc&pa
 }
 ```
 
----
-
 ### `GET /api/profiles/search?q=<query>`
 
 Natural language query endpoint. Converts plain English into filters.
@@ -104,13 +102,9 @@ GET /api/profiles/search?q=adult men from kenya&page=2&limit=20
 
 Supports `page` and `limit` for pagination.
 
----
-
 ### `GET /api/profiles/:id`
 
 Returns a single profile by UUID.
-
----
 
 ## Natural Language Parsing
 
