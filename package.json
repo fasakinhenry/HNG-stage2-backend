@@ -1,11 +1,19 @@
 {
   "name": "hng-stage2-backend",
-  "module": "index.js",
-  "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
+  "version": "1.0.0",
+  "description": "Insighta Labs — Intelligence Query Engine",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "bun src/index.js",
+    "dev": "nodemon src/index.js",
+    "seed": "bun src/scripts/seed.js"
   },
-  "peerDependencies": {
-    "typescript": "^5"
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
