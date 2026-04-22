@@ -160,7 +160,7 @@ async function searchProfiles(req, res) {
     const filters = parseQuery(q.trim());
 
     if (!filters) {
-      return res.status(200).json({ status: "error", message: "Unable to interpret query" });
+      return res.status(400).json({ status: "error", message: "Unable to interpret query" });
     }
 
     const filter = buildMongoFilter(filters);
